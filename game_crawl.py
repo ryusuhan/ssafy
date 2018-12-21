@@ -10,12 +10,6 @@ from flask import Flask, request, make_response, render_template
 
 app = Flask(__name__)
 
-slack_token = "xoxb-509502385906-508901040097-0LgWFzLvYpkmUpgbAqtLlH2o"
-slack_client_id = "509502385906.509398738819"
-slack_client_secret = "77e08abc01fd12ee43fb03885bf5aa57"
-slack_verification = "c9RlB5fzLTyhRVYsN0hjRjGI"
-sc = SlackClient(slack_token)
-
 # 크롤링 함수 구현하기
 def _crawl_game_keywords(text):
 
